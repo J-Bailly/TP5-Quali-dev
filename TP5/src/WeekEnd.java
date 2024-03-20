@@ -84,6 +84,27 @@ class WeekEnd{
 		double avoir = m - totalDepensesPersonne(p); 
 		return avoir; 
     }
+    
+    public void mock_initialize() {
+        Personne pierre = new Personne("Durand","Pierre"); 
+        Personne paul = new Personne("Dupond","Paul"); 
+        Personne marie = new Personne("Dumond","Marie");
+        Personne anne = new Personne("Dunon","Anne");  
+        Depense d1 = new Depense(pierre, 12, "pain"); 	
+        Depense d2 = new Depense(paul, 100, "pizza"); 
+        Depense d3 = new Depense(pierre, 70, "essence");
+        Depense d4 = new Depense(marie, 15, "vin");  
+        Depense d5 = new Depense(paul, 10, "vin"); 
+        this.ajouterPersonne(pierre); 
+        this.ajouterPersonne(paul);
+        this.ajouterPersonne(marie);
+        this.ajouterPersonne(anne); 
+        this.ajouterDepense(d1);   
+        this.ajouterDepense(d2); 
+        this.ajouterDepense(d4);   
+        this.ajouterDepense(d3);
+        this.ajouterDepense(d5);
+    }
 }
 
 class Executable {
