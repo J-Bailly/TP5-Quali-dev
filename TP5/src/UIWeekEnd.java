@@ -70,15 +70,16 @@ class AppWeekEnd {
 	    String commande_brute = System.console().readLine();
 	    String commande = commande_brute.strip().toLowerCase();
 	    if(commande.equals("q")) {
-		quitter = true;
-		commande_faite = true;
+			quitter = true;
+			commande_faite = true;
 	    } 
 		else if(commande.equals("p")){
-			System.out.println(we.toString());
+
+			System.out.println(we.getAmis());
             commande_faite = true;
 		}
 		else if(commande.equals("d")){
-			System.out.println(we.toString());
+			System.out.println(we.getDepenses());
             commande_faite = true;
 		}
 		else if(commande.equals("t")){
